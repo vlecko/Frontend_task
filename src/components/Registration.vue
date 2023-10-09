@@ -128,10 +128,10 @@ export default {
           })
           .finally(() => {
             this.loading = false;
-
           })
       } else {
         this.confidentialityError = true;
+        this.loading = false;
       }
     }
   },
